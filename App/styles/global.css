@@ -1,0 +1,92 @@
+@import './layout.css';
+@import './home.css';
+@import './registerClient.css';
+@import './registerProduct.css';
+@import './registerOrder.css';
+
+:root {
+    --github: #212529;
+    --gray-0: #f8f9fa;
+    --gray-3: #dee2e6;
+    --gray-4: #ced4da;
+    --gray-5: #adb5bd;
+    --gray-6: #868e96;
+    --gray-7: #495057;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+}
+
+.label {
+    font-size: 1.125rem;
+    display: block;
+    color: var(--gray-7);
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.input {
+    min-height: 38px;
+    border: 1px solid var(--gray-4);
+    outline: 0;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 16px;
+    min-width: 380px;
+    width: 100%;
+}
+
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.select {
+    min-height: 38px;
+    min-width: 380px;
+    width: 100%;
+    border: 1px solid var(--gray-4);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.button {
+    font-size: 1rem;
+    outline: 0;
+    border: 1px solid var(--gray-4);
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 38px;
+}

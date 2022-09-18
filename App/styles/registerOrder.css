@@ -1,0 +1,48 @@
+.RegisterOrderProductContainer > div:first-child {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.RegisterOrderQuantityInput {
+    min-width: auto !important;
+    max-width: 120px !important;
+}
+
+.RegisterOrderCartContainer {
+    margin-top: 20px;
+    border: 1px solid var(--gray-4);
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.RegisterOrderCartContainer > legend{
+    padding: 0 10px;
+}
+
+.RegisterOrderCartTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.RegisterOrderCartTable th, .RegisterOrderCartTable td {
+    border: 1px solid var(--gray-4);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.RegisterOrderCartMessage {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 4px var(--gray-4), 0 0 8px var(--gray-4);
+}
+
+.RegisterOrderButtonSubmitContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d-none {
+    display: none;
+}

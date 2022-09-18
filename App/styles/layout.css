@@ -1,0 +1,65 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.LayoutHeader {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    padding: 10px;
+    background-color: var(--github);
+    position: sticky;
+    top: 0;
+}
+
+.LayoutHeader .LayoutNav {
+    flex: 1;
+    margin: 0 200px;
+}
+
+.LayoutHeader .LayoutNav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.LayoutLinkLine {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.LayoutLink {
+    color: var(--gray-0);
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.LayoutLink:hover {
+    letter-spacing: 2px;
+    color: var(--gray-3);
+}
+
+.LayoutMain {
+    flex: 1;
+}
+
+@media (max-width: 1000px) {
+    .LayoutHeader .LayoutNav {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .LayoutHeader .LayoutNav {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .LayoutHeader .LayoutNav {
+        margin: 0;
+    }
+}
